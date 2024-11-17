@@ -15,8 +15,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./uh.css">
     <script>
-        WebFont.load({
-            google: { families: ["Oswald:200,300,400,500,600,700"] }
+        document.addEventListener("DOMContentLoaded", function () {
+            const quotes = [
+                "I love the aleast2 and duckoi bodypillow",
+                "Unfortunately, Dr.Weldmans Coca-Cola bottle perished in the explosion of the DMR",
+                "Prepare thy self.",
+                "check steam",
+                "Prepare for unforeseen consequences."
+            ];
+            function getRandomQuote() {
+                const quoteElement = document.getElementById('random-quote');
+                if (quoteElement) {
+                    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+//                    console.log(randomQuote);  
+                    quoteElement.textContent = `"${randomQuote}"`;  
+                }
+            }
+            getRandomQuote();
         });
     </script>
 </head>
@@ -51,10 +66,10 @@
                     </p>
                 </div>
                 <div class="social-links">
-                    <a href="https://twitter.com/fafareal622" target="_blank" class="social-link" style="background-color: #0078D4;">Twitter</a>
-                    <a href="https://discord.gg/phuNHu5mcf" target="_blank" class="social-link" style="background-color: #5865F2;">Discord</a>
-                    <a href="https://www.youtube.com/@toiletsreech" target="_blank" class="social-link" style="background-color: #FF0000;">YouTube</a>
-                    <a href="https://open.spotify.com/user/31qju5gqzvkkcj7j47gygxz63ylq" target="_blank" class="social-link" style="background-color: #1DB954;">Spotify</a>
+                    <a href="https://twitter.com/fafareal622" target="_blank" class="social-link twitter-link">Twitter</a>
+                    <a href="https://discord.gg/phuNHu5mcf" target="_blank" class="social-link discord-link">Discord</a>
+                    <a href="https://www.youtube.com/@toiletsreech" target="_blank" class="social-link youtube-link">YouTube</a>
+                    <a href="https://open.spotify.com/user/31qju5gqzvkkcj7j47gygxz63ylq" target="_blank" class="social-link spotify-link">Spotify</a>
                 </div>
             </div>
         </div>
@@ -75,6 +90,9 @@
                 </a>
             </div>            
         </section>
+        <section class="random-quote-section">
+            <p id="random-quote"></p> 
+        </section>
     </main>
     <footer>
         <p>© 2024 darktouch studios. All rights reserved.</p>
@@ -82,5 +100,7 @@
         <p>Website Credits: Website design, programming, assets and graphics by <strong>Fdmdmdnnghhdgsbshj</strong> (Float), Special thanks to <strong>Oswald</strong> font by Google Fonts and background image by various artists.</p>
     </footer>
 </body>
+</html>
+
 </html>
 
