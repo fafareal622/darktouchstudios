@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9em;
+        }
+        .endpoint {
+            background-color: #eef;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .endpoint h3 {
+            margin: 0;
+        }
+        .endpoint p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>API Documentation</h1>
+        <p>Welcome to the API documentation for the Sample API!</p>
+    </header>
+
+    <div class="container">
+        <h2>Introduction</h2>
+        <p>The Sample API allows you to interact with the fictional platform to retrieve data, manage resources, and perform various actions. Below are details of the available endpoints and their usage.</p>
+
+        <h2>Base URL</h2>
+        <p>All API requests are made to the following base URL:</p>
+        <pre><code>https://darktouchstudios.pages.dev/api/v1</code></pre>
+
+        <h2>Authentication</h2>
+        <p>All requests to the API must include an API key in the request header. You can obtain your API key by signing up on the platform.</p>
+
+        <h2>Endpoints</h2>
+
+        <!-- Example Endpoint 1 -->
+        <div class="endpoint">
+            <h3>GET /users</h3>
+            <p>Retrieve a list of all users on the platform.</p>
+            <p><strong>Request Example:</strong></p>
+            <pre><code>GET https://darktouchstudios.pages.dev/api/v1/users</code></pre>
+            <p><strong>Response Example:</strong></p>
+            <pre><code>[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "johndoe@example.com"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "janesmith@example.com"
+    }
+]</code></pre>
+        </div>
+
+        <!-- Example Endpoint 2 -->
+        <div class="endpoint">
+            <h3>POST /users</h3>
+            <p>Create a new user in the system.</p>
+            <p><strong>Request Example:</strong></p>
+            <pre><code>POST https://darktouchstudios.pages.dev/api/v1/users</code></pre>
+            <p><strong>Request Body:</strong></p>
+            <pre><code>{
+    "name": "Alice Cooper",
+    "email": "alicecooper@example.com"
+}</code></pre>
+            <p><strong>Response Example:</strong></p>
+            <pre><code>{
+    "id": 3,
+    "name": "Alice Cooper",
+    "email": "alicecooper@example.com"
+}</code></pre>
+        </div>
+
+        <!-- Example Endpoint 3 -->
+        <div class="endpoint">
+            <h3>GET /users/{id}</h3>
+            <p>Retrieve details of a specific user by their ID.</p>
+            <p><strong>Request Example:</strong></p>
+            <pre><code>GET https://darktouchstudios.pages.dev/api/v1/users/1</code></pre>
+            <p><strong>Response Example:</strong></p>
+            <pre><code>{
+    "id": 1,
+    "name": "John Doe",
+    "email": "johndoe@example.com"
+}</code></pre>
+        </div>
+
+        <h2>Error Handling</h2>
+        <p>If a request is invalid, the API will return an error response. Here are common error codes:</p>
+        <ul>
+            <li><code>400</code>: Bad Request - The request could not be understood by the server due to malformed syntax.</li>
+            <li><code>401</code>: Unauthorized - The request requires user authentication.</li>
+            <li><code>404</code>: Not Found - The requested resource could not be found.</li>
+            <li><code>500</code>: Internal Server Error - An error occurred on the server.</li>
+        </ul>
+        
+        <h2>Rate Limiting</h2>
+        <p>The API has a rate limit of 1000 requests per hour. If you exceed this limit, you will receive a <code>429 Too Many Requests</code> response until the limit resets.</p>
+
+        <h2>Contact</h2>
+        <p>If you have any questions or need further assistance, please contact support at <a href="mailto:support@sampleplatform.com">support@sampleplatform.com</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sample Platform API Documentation</p>
+    </footer>
+</body>
+</html>
