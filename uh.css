@@ -7,6 +7,25 @@ body {
   background-size: cover;
 }
 
+#bodyalt {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(255, 222, 189);
+  margin: 0;
+  padding: 0;
+  background: url('./altbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.image-container {
+  text-align: center;
+  width: 150px;
+  height: 150px; 
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .page-wrapper {
   padding: 20px;
   text-align: center;
@@ -102,6 +121,19 @@ body {
   gap: 20px;
 }
 
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pics img {
+  width: 50px; 
+  height: 50px; 
+  object-fit: cover; 
+}
+
 .random-quote-section {
   font-size: 1.5em;
   color: #000; 
@@ -116,8 +148,8 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #f4f4f4;
-  color: rgb(0,0,0);
-  margin-top: 40px;
+  color: rgb(0, 0, 0);
+  margin-top: auto; 
   font-size: 0.9rem;
 }
 
