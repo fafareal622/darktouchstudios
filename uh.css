@@ -104,6 +104,10 @@ body {
   background-color: #1DB954;
 }
 
+.trello-link {
+  background-color: #444444;
+}
+
 .games-section {
   text-align: center;
   padding: 20px;
