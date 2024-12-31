@@ -6,6 +6,27 @@
     <title>Darktouch Studios - History and Milestones</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="uh.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const quotes = [
+            // "I love the aleast2 and duckoi bodypillow",
+            //    "Unfortunately, Dr.Weldmans Coca-Cola bottle perished in the explosion of the DMR",
+            //    "Prepare thy self.",
+            //    "check steam",
+            //    "Prepare for unforeseen consequences." 
+            "Happy New Year!"
+            ];
+            function getRandomQuote() {
+                const quoteElement = document.getElementById('random-quote');
+                if (quoteElement) {
+                    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+//                    console.log(randomQuote);  
+                    quoteElement.textContent = `"${randomQuote}"`;  
+                }
+            }
+            getRandomQuote();
+        });
+    </script>
 </head>
 <body>
     <section class="history-section">
@@ -77,7 +98,15 @@
                 <p>12/??/??: This is undocumented and will be until the end of December</p>
             </div>                     
         </div>
-    </section>    
+    </section> 
+    <section class="random-quote-section">
+        <p id="random-quote"></p> 
+    </section>
+    <footer>
+        <p>© 2025 darktouch studios. All rights reserved.</p>
+        <p>Darktouch Studios Credits: Fdmdmdnnghhdgsbshj: Building, Scripting, Modeling, Thumbnail design (sometimes) and more. eahan: building (SCTK) and ideas. Dr. Pocket: building (funny game and SCTK) and ideas. Aleast2: thumbnail design and ideas. Niiyu: Thumbnail design, Building (untitled modded NDS) and ideas. Felix: ideas, thumbnail design (temporary). NotPreston: scripting (Windows Phase 2 lobby). Duckoi: Thumbnail design and ideas.</p>
+        <p>Website Credits: Website design, programming, assets, and graphics by <strong>Fdmdmdnnghhdgsbshj</strong> (Float). Special thanks to <strong>Oswald</strong> font by Google Fonts and background image by various artists.</p>
+    </footer>   
 </body>
 </html>
 
