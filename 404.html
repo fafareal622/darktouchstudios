@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="404 - Page not found on darktouch studios.">
+    <meta property="og:title" content="404 - darktouch">
+    <meta property="og:description" content="404 - The page you're looking for does not exist.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="404 - darktouch">
+    <meta name="twitter:description" content="404 - The page you're looking for does not exist.">
+    <title>404 - darktouch</title>
+    <link rel="icon" href="./Darktouch_New.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./uh.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const quotes = [
+            // "I love the aleast2 and duckoi bodypillow",
+            //    "Unfortunately, Dr.Weldmans Coca-Cola bottle perished in the explosion of the DMR",
+            //    "Prepare thy self.",
+            //    "check steam",
+            //    "Prepare for unforeseen consequences." 
+            "Happy New Year!"
+            ];
+            function getRandomQuote() {
+                const quoteElement = document.getElementById('random-quote');
+                if (quoteElement) {
+                    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+//                    console.log(randomQuote);  
+                    quoteElement.textContent = `"${randomQuote}"`;  
+                }
+            }
+            getRandomQuote();
+        });
+    </script>
+</head>
+<body>
+    <header class="page-wrapper">
+        <div class="main-wrapper">
+            <div class="container">
+                <img 
+                    src="./Darktouch_New.png" 
+                    alt="darktouch studios logo" 
+                    class="site-logo" 
+                    loading="lazy"
+                    width="152"
+                    sizes="152px"
+                >
+                <div class="profile-text">
+                    <h1>404 - Page Not Found</h1>
+                    <p>This page doesnt exist!</p>
+                    <p>
+                        You can return to our <a href="index.html">home page</a> or explore some of our projects below:
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="mailto:billybobjohnson569@gmail.com" class="contact-email">
+                        Contact: billybobjohnson569@gmail.com
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/fafareal622" target="_blank" class="social-link twitter-link">Twitter</a>
+                    <a href="https://discord.gg/phuNHu5mcf" target="_blank" class="social-link discord-link">Discord</a>
+                    <a href="https://www.youtube.com/@toiletsreech" target="_blank" class="social-link youtube-link">YouTube</a>
+                    <a href="https://open.spotify.com/user/31qju5gqzvkkcj7j47gygxz63ylq" target="_blank" class="social-link spotify-link">Spotify</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="random-quote-section">
+            <p id="random-quote"></p> 
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 darktouch studios. All rights reserved.</p>
+        <p>Darktouch Studios Credits: Fdmdmdnnghhdgsbshj: Building, Scripting, Modeling, Thumbnail design (sometimes) and more. eahan: building (SCTK) and ideas. docter_pocket: building: (funny game and SCTK) and ideas. Aleast2: thumbnail design and ideas. Niiyu: Thumbnail design, Building (untitled modded nds) and ideas. Felix: ideas, thumbnail design (temporary). NotPreston: scripting (Windows Phase 2 lobby). Duckoi: Thumbnail design and ideas.</p>
+        <p>Website Credits: Website design, programming, assets and graphics by <strong>Fdmdmdnnghhdgsbshj</strong> (Float), Special thanks to <strong>Oswald</strong> font by Google Fonts and background image by various artists.</p>
+    </footer>
+</body>
+</html>
